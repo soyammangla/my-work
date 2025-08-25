@@ -1,10 +1,38 @@
 .body {
-  padding-top: 56px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.searchbar {
+  width: 400px;
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
+  height: 60px;
+}
+
+.main-hero {
+  margin: 60px 150px;
+}
+
+.hero {
+  margin-top: 75px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.hero-image {
+  width: auto;
+  height: auto;
+}
+
+.product-heading {
+  margin-bottom: 25px;
+}
+
+.album .card-img-top {
+  height: 425px;
   width: 100%;
+  object-fit: cover;
 }
