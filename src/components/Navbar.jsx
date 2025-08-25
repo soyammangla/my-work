@@ -3,7 +3,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container d-flex justify-content-between align-items-center">
         <a className="navbar-brand" href="#">
-          <h3>ShopEasy</h3>
+          <h3>EasyShop</h3>
         </a>
 
         <ul className="navbar-nav d-flex flex-row mb-0">
