@@ -23,7 +23,6 @@ const Hero = () => {
               </button>
             </div>
           </div>
-
           {/* Right side image */}
           <div className="col-lg-6 text-center hero-image">
             <img
@@ -37,5 +36,4 @@ const Hero = () => {
     </div>
   );
 };
-
 export default Hero;

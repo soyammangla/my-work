@@ -1,52 +1,49 @@
-.body {
+body {
   margin: 0;
   padding: 0;
-  display: flex;
+  box-sizing: border-box;
+  display: contents;
 }
 
+#root {
+  background-color: aliceblue;
+}
 .searchbar {
   width: 400px;
-}
-
-.navbar {
-  height: 60px;
 }
 
 .main-hero {
   margin: 60px 150px;
 }
-
 .hero {
   margin-top: 75px;
   margin-left: 300px;
   margin-right: 300px;
 }
-
 .hero-image {
   width: auto;
   height: auto;
 }
-
 .products {
   margin-left: 90px;
   margin-right: 70px;
 }
-
 .text {
   margin-top: 35px;
 }
-
 .product-heading {
   margin-bottom: 25px;
 }
-
 .album .card-img-top {
   height: 425px;
   width: 100%;
   object-fit: cover;
 }
-
 .footer {
+  width: 100%;
+}
+
+.container {
   width: 100%;
 }
 
@@ -55,9 +52,12 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-
 .quick-links {
   text-align: right;
   justify-content: flex-end;
   gap: 20px;
+}
+
+.cart {
+  margin-top: 35px;
 }

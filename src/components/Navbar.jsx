@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -8,7 +7,6 @@ const Navbar = () => {
         <Link className="navbar-brand" to="/">
           <h3>EasyShop</h3>
         </Link>
-
         {/* Nav Links */}
         <ul className="navbar-nav d-flex flex-row mb-0">
           <li className="nav-item me-3">
@@ -27,7 +25,6 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-
         {/* Search Bar */}
         <form className="d-flex searchbar" role="search">
           <input
@@ -44,5 +41,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;

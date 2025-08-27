@@ -7,7 +7,6 @@ const Products = () => {
           <h2 className="text-center mb-5 fw-bold text-dark">
             Featured Products
           </h2>
-
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
             {/* Card 1 */}
             <div className="col">
@@ -33,7 +32,6 @@ const Products = () => {
                 </div>
               </div>
             </div>
-
             {/* Card 2 */}
             <div className="col">
               <div className="card shadow-sm h-100">
@@ -58,7 +56,6 @@ const Products = () => {
                 </div>
               </div>
             </div>
-
             {/* Card 3 */}
             <div className="col">
               <div className="card shadow-sm h-100">
@@ -83,7 +80,6 @@ const Products = () => {
                 </div>
               </div>
             </div>
-
             {/* Card 4 */}
             <div className="col">
               <div className="card shadow-sm h-100">
@@ -104,7 +100,6 @@ const Products = () => {
                 </div>
               </div>
             </div>
-
             {/* Card 5 */}
             <div className="col">
               <div className="card shadow-sm h-100">
@@ -129,7 +124,6 @@ const Products = () => {
                 </div>
               </div>
             </div>
-
             {/* Card 6 */}
             <div className="col">
               <div className="card shadow-sm h-100">
@@ -160,5 +154,4 @@ const Products = () => {
     </div>
   );
 };
-
 export default Products;
