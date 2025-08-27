@@ -1,34 +1,34 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div className="container d-flex justify-content-between align-items-center">
-        <a className="navbar-brand" href="#">
+      <div className="container d-flex justify-content-between align-items-center page-container">
+        {/* Brand */}
+        <Link className="navbar-brand" to="/">
           <h3>EasyShop</h3>
-        </a>
+        </Link>
 
+        {/* Nav Links */}
         <ul className="navbar-nav d-flex flex-row mb-0">
           <li className="nav-item me-3">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item me-3">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="/products">
               Products
-            </a>
+            </Link>
           </li>
           <li className="nav-item me-3">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="/cart">
               Cart
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
 
+        {/* Search Bar */}
         <form className="d-flex searchbar" role="search">
           <input
             className="form-control me-2"

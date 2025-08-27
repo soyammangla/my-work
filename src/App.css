@@ -27,6 +27,15 @@
   height: auto;
 }
 
+.products {
+  margin-left: 90px;
+  margin-right: 70px;
+}
+
+.text {
+  margin-top: 35px;
+}
+
 .product-heading {
   margin-bottom: 25px;
 }
@@ -35,4 +44,20 @@
   height: 425px;
   width: 100%;
   object-fit: cover;
+}
+
+.footer {
+  width: 100%;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.quick-links {
+  text-align: right;
+  justify-content: flex-end;
+  gap: 20px;
 }
