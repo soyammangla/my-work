@@ -1,8 +1,23 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-const Navbar = ({ cartCount, searchTerm, setSearchTerm }) => {
+const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav
+      className={`navbar navbar-expand-lg navbar-dark bg-dark fixed-top ${
+        scrolled ? "navbar-scrolled" : ""
+      }`}
+    >
       <div className="container d-flex justify-content-between align-items-center page-container">
         {/* Brand */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
@@ -22,13 +37,8 @@ const Navbar = ({ cartCount, searchTerm, setSearchTerm }) => {
             </Link>
           </li>
           <li className="nav-item me-3">
-            <Link className="nav-link position-relative" to="/cart">
+            <Link className="nav-link" to="/cart">
               Cart
-              {cartCount > 0 && (
-                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {cartCount}
-                </span>
-              )}
             </Link>
           </li>
           <li className="nav-item me-3">
@@ -38,19 +48,13 @@ const Navbar = ({ cartCount, searchTerm, setSearchTerm }) => {
           </li>
         </ul>
 
-        {/* Search Bar */}
-        <form
-          className="d-flex"
-          role="search"
-          onSubmit={(e) => e.preventDefault()}
-        >
+        {/* Simple Search Bar */}
+        <form className="d-flex searchbar" role="search">
           <input
             className="form-control me-2"
             type="search"
             placeholder="Search products..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            style={{ width: "320px" }}
+            aria-label="Search"
           />
           <button className="btn btn-outline-light" type="submit">
             Search

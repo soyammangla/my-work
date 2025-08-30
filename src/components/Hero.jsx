@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="main-hero">
@@ -15,12 +16,14 @@ const Hero = () => {
               always be simple and easy.
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button
-                type="button"
-                className="btn btn-primary btn-lg px-4 me-md-2"
-              >
-                Shop Now
-              </button>
+              <Link to="/Products">
+                <button
+                  type="button"
+                  className="btn btn-primary btn-lg px-4 me-md-2"
+                >
+                  Shop Now
+                </button>
+              </Link>
             </div>
           </div>
           {/* Right side image */}
