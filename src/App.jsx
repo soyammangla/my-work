@@ -13,7 +13,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const [loading, setLoading] = useState(true);
   const [cartItems, setCartItems] = useState([]);
-  const [searchTerm, setSearchTerm] = useState(""); // Search state
+  const [searchTerm, setSearchTerm] = useState("");
 
   // Splash screen
   useEffect(() => {
